@@ -2,7 +2,7 @@ import React from 'react'
 
 const TaskInput = () => {
     return (
-        <div>
+        <div className='task-input'>
             <form onSubmit="">
                 <input type="text" />
                 <button type='submit'>Add Task</button>

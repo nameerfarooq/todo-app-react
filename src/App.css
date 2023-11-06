@@ -1,6 +1,7 @@
 :root {
   --sea-green: #026b4c;
   --white: #ffffff;
+  --red: #ff0000;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
@@ -45,4 +46,67 @@ body {
 
 .main-app {
   text-align: center;
+}
+
+.task-input input {
+  outline: none;
+  border: 2px solid var(--sea-green);
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  min-width: 200px;
+  margin: 2%;
+}
+
+.task-input button {
+  outline: none;
+  border: 2px solid var(--sea-green);
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--sea-green);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.task-input button:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--sea-green);
+
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  min-width: 200px;
+  margin: 15px auto;
+}
+
+.task-item .left input {
+  margin-inline-end: 10px;
+}
+
+.task-item .right {
+  cursor: pointer;
+  color: var(--red);
+}
+
+.task-count {
+  border-radius: 5px;
+  background-color: var(--sea-green);
+  color: var(--white);
+  padding: 10px;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  gap: 20px;
+}
+
+.task-count .right {
+  font-size: 18px;
+  font-weight: 600;
 }
